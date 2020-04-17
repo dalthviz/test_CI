@@ -1,7 +1,7 @@
-language: node_js
+language: python
 node_js:
- - "stable"
+ - "3.6"
 before_script:
- - npm install
+ - pip install -r requirements.txt
 script:
  - python -m unittest tests
